@@ -7,12 +7,12 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Arrays;
 
-public class Filter extends JFrame {
+public class BoLoc extends JFrame {
     private JLabel originalImageLabel;
     private JLabel filteredImageLabel;
     private BufferedImage originalImage;
 
-    public Filter() {
+    public BoLoc() {
         setTitle("Image Filter App");
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

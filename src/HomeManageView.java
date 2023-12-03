@@ -8,13 +8,13 @@ public class HomeManageView extends JFrame {
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JButton transformButton = new JButton("Negative Transformation");
+        JButton transformButton = new JButton("Bien doi am ban");
 
-        JButton thresholdingButton = new JButton("Thresholding");
+        JButton thresholdingButton = new JButton("Phan nguong");
 
-        JButton histogramButton = new JButton("Histogram Equalization");
+        JButton histogramButton = new JButton("Can bang luoc do xam");
 
-        JButton filterButton = new JButton("Filter");
+        JButton filterButton = new JButton("Bo loc");
 
         filterButton.addActionListener(new ActionListener() {
             @Override
@@ -54,22 +54,22 @@ public class HomeManageView extends JFrame {
     }
 
     private void opentFilterView() {
-        Filter filter = new Filter();
+        BoLoc filter = new BoLoc();
         filter.setVisible(true);
     }
 
     private void openHistogramEqualization() {
-        HistogramEqualization histogramEqualization = new HistogramEqualization();
+        CanBangLuocDoXam histogramEqualization = new CanBangLuocDoXam();
         histogramEqualization.setVisible(true);
     }
 
     private void openThresholdingView() {
-        Thresholding thresholding = new Thresholding();
+        PhanNguong thresholding = new PhanNguong();
         thresholding.setVisible(true);
     }
 
     private void openTransformationView() {
-        NegativeTransformation transformationView = new NegativeTransformation();
+        BienDoiAmBan transformationView = new BienDoiAmBan();
         transformationView.setVisible(true);
     }
 
